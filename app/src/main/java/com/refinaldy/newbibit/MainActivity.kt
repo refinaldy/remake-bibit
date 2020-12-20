@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val search: SearchView = findViewById(R.id.searchView)
-
+    
     }
 
 
