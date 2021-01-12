@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">NewBibit</string>
-    <string name="title_card">Nilai Portofolio</string>
+    <string name="title_card_1_home">Pilih Reksadana Sendiri</string>
+    <string name="sub_title_card_1_home">Untuk yang pede bangun portofolio investasi sendiri</string>
+    <string name="title_card_2_home">Sekarang Kamu Bisa Nabung Rutin</string>
+    <string name="sub_title_card_2_home">Jadwalkan pembelian rutin reksa danamu setiap bulan.</string>
+    <string name="title_card_3_home">Gift Card Reksadana</string>
+    <string name="sub_title_card_3_home">Hadiahkan reksa dana ke teman dan keluarga kamu di hari spesial mereka</string>
+    <string name="title_card_4_home">Tips Untuk Kamu</string>
 </resources>
