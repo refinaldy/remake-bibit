@@ -13,4 +13,6 @@
     <string name="pasar_uang">Pasar Uang</string>
     <string name="obligasi">Obligasi</string>
     <string name="saham">Saham</string>
+    <string name="desc_calendar">desc_calendar</string>
+    <string name="desc_right_arrow">desc_right_arrow</string>
 </resources>
