@@ -7,4 +7,10 @@
     <string name="title_card_3_home">Gift Card Reksadana</string>
     <string name="sub_title_card_3_home">Hadiahkan reksa dana ke teman dan keluarga kamu di hari spesial mereka</string>
     <string name="title_card_4_home">Tips Untuk Kamu</string>
+    <string name="desc_icon_rdpu">icon_rdpu</string>
+    <string name="desc_icon_rds">icon_rds</string>
+    <string name="desc_icon_rdpt">icon_rdpt</string>
+    <string name="pasar_uang">Pasar Uang</string>
+    <string name="obligasi">Obligasi</string>
+    <string name="saham">Saham</string>
 </resources>
