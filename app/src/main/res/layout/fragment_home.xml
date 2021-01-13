@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cv_reksa_dana"
         android:layout_width="match_parent"
         android:layout_height="169dp"
         android:layout_marginTop="16dp"
@@ -30,81 +30,80 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/ic_rds"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:contentDescription="@string/desc_icon_rds"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
-                app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="@+id/tv_rds"
+                app:layout_constraintStart_toStartOf="@+id/tv_rds"
+                app:layout_constraintTop_toTopOf="@+id/ic_rdpt"
                 app:srcCompat="@drawable/icon_rds" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/ic_rdpt"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="24dp"
                 android:contentDescription="@string/desc_icon_rdpt"
-                app:layout_constraintEnd_toEndOf="@+id/textView11"
-                app:layout_constraintStart_toStartOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/tv_rdpt"
+                app:layout_constraintStart_toStartOf="@+id/tv_rdpt"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sub_title_reksa_dana"
                 app:srcCompat="@drawable/icon_rdpt" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/ic_rdpu"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:contentDescription="@string/desc_icon_rdpu"
-                app:layout_constraintEnd_toEndOf="@+id/textView12"
-                app:layout_constraintStart_toStartOf="@+id/textView12"
-                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="@+id/tv_rdpu"
+                app:layout_constraintStart_toStartOf="@+id/tv_rdpu"
+                app:layout_constraintTop_toTopOf="@+id/ic_rdpt"
                 app:srcCompat="@drawable/icon_rdpu" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tv_rdpu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/pasar_uang"
-                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                app:layout_constraintEnd_toStartOf="@+id/tv_rdpt"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                app:layout_constraintTop_toBottomOf="@+id/ic_rdpu" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tv_rds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/saham"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                app:layout_constraintStart_toEndOf="@+id/tv_rdpt"
+                app:layout_constraintTop_toBottomOf="@+id/ic_rds" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tv_rdpt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/obligasi"
-                app:layout_constraintEnd_toStartOf="@+id/textView10"
+                app:layout_constraintEnd_toStartOf="@+id/tv_rds"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/textView12"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintStart_toEndOf="@+id/tv_rdpu"
+                app:layout_constraintTop_toBottomOf="@+id/ic_rdpt" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tv_sub_title_reksa_dana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sub_title_card_1_home"
-                app:layout_constraintStart_toStartOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintStart_toStartOf="@+id/tv_title_reksa_dana"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_reksa_dana" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tv_title_reksa_dana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -119,7 +118,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/cv_schedule"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:layout_marginStart="16dp"
@@ -127,7 +126,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/cv_reksa_dana">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -156,17 +155,17 @@
                 app:srcCompat="@drawable/btn_right_arrow" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/tv_sub_title_schedule"
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/sub_title_card_2_home"
                 android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/textView13"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintStart_toStartOf="@+id/tv_title_schedule"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_schedule" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tv_title_schedule"
                 android:layout_width="191dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -181,13 +180,15 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_gift_card"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" >
+        app:layout_constraintTop_toBottomOf="@+id/cv_schedule">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -199,10 +200,10 @@
                 android:layout_height="72dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
+                android:contentDescription="@string/desc_gift"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/gift_card"
-                android:contentDescription="@string/desc_gift" />
+                app:srcCompat="@drawable/gift_card" />
 
             <ImageView
                 android:id="@+id/imageView10"
@@ -216,17 +217,17 @@
                 app:srcCompat="@drawable/btn_right_arrow" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/tv_sub_title_gift_card"
                 android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/sub_title_card_3_home"
                 android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/textView15"
-                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+                app:layout_constraintStart_toStartOf="@+id/tv_title_gift_card"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_gift_card" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tv_title_gift_card"
                 android:layout_width="191dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
