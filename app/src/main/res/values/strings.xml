@@ -16,4 +16,11 @@
     <string name="desc_calendar">desc_calendar</string>
     <string name="desc_right_arrow">desc_right_arrow</string>
     <string name="desc_gift">desc_gift</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_portofolio">Portofolio</string>
+    <string name="nav_transaction">Transaksi</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_profile">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
