@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailReksadanaActivity">
+
+    <Button
+        android:id="@+id/btn_buy_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_buy"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@color/btn_disable"
+        app:strokeColor="@color/btn_active"
+        app:strokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_buy_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/btn_left_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="Sucorinvest Sharia Money Market Fund"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_detail_manager_investasi"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/title_manajer_investasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Manajer Investasi"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/logo_investment_manager"
+                            android:layout_width="112dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/title_manajer_investasi"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/logo_sucorinvest"
+                            app:layout_constraintStart_toStartOf="@id/title_manajer_investasi"
+                            app:layout_constraintTop_toBottomOf="@id/title_manajer_investasi" />
+
+                        <ImageView
+                            android:id="@+id/line_up"
+                            android:layout_width="343dp"
+                            android:layout_height="0dp"
+                            android:layout_below="@id/logo_investment_manager"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/line"
+                            app:layout_constraintStart_toStartOf="@id/logo_investment_manager"
+                            app:layout_constraintTop_toBottomOf="@id/logo_investment_manager" />
+
+
+                        <TextView
+                            android:id="@+id/title_min_investment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Minimum Pembelian"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="@+id/logo_investment_manager"
+                            app:layout_constraintTop_toBottomOf="@+id/line_up" />
+
+                        <TextView
+                            android:id="@+id/purchase_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Gratis"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/min_investment"
+                            app:layout_constraintTop_toBottomOf="@+id/min_investment" />
+
+                        <TextView
+                            android:id="@+id/title_purchase_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="start"
+                            android:text="Harga Pembelian"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="@+id/title_min_investment"
+                            app:layout_constraintTop_toBottomOf="@+id/title_min_investment" />
+
+                        <TextView
+                            android:id="@+id/min_investment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="Rp. 100.000"
+                            android:textColor="@color/primary"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/line_up" />
+
+                        <TextView
+                            android:id="@+id/title_selling_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Biaya Penjualan"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="@+id/title_purchase_fee"
+                            app:layout_constraintTop_toBottomOf="@+id/title_purchase_fee" />
+
+                        <TextView
+                            android:id="@+id/selling_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Gratis"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/purchase_fee"
+                            app:layout_constraintTop_toBottomOf="@+id/purchase_fee" />
+
+                        <ImageView
+                            android:id="@+id/line_down"
+                            android:layout_width="343dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="8dp"
+                            android:padding="0dp"
+                            android:src="@drawable/line"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_selling_fee" />
+
+                        <TextView
+                            android:id="@+id/title_custody_bank"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Bank Kustodian"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="@+id/title_selling_fee"
+                            app:layout_constraintTop_toBottomOf="@+id/line_down"
+                            android:layout_width="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/custody_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="HSBC INDONESIA"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/selling_fee"
+                            app:layout_constraintTop_toBottomOf="@+id/line_down" />
+
+                        <TextView
+                            android:id="@+id/title_holding_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Holding Bank"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="@+id/title_custody_bank"
+                            app:layout_constraintTop_toBottomOf="@+id/title_custody_bank" />
+
+                        <TextView
+                            android:id="@+id/holding_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Bank BCA"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/custody_bank"
+                            app:layout_constraintTop_toBottomOf="@+id/custody_bank" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/title_time_machine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Mesin Waktu Reksa Dana"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/sub_title_time_machine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Jika kamu investasi setiap bulan sebesar"
+                        app:layout_constraintStart_toStartOf="@+id/title_time_machine"
+                        app:layout_constraintTop_toBottomOf="@+id/title_time_machine" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_time_machine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="@+id/title_time_machine"
+                        app:layout_constraintTop_toBottomOf="@+id/sub_title_time_machine">
+
+                        <RadioButton
+                            android:id="@+id/rb_monthly"
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Rutin Per Bulan"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_once_time"
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Nabung Sekali"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/appCompatEditText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/primary"
+                        android:hint="Masukkan Nominal"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:text="Rp. 100.000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@+id/rg_time_machine"
+                        app:layout_constraintTop_toBottomOf="@+id/rg_time_machine" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/primary"
+                        android:text="1 Tahun"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/rg_time_machine"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatEditText2" />
+
+                    <TextView
+                        android:id="@+id/title_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Maka nilai yang kamu dapatkan hari ini"
+                        app:layout_constraintStart_toStartOf="@+id/button"
+                        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+                    <TextView
+                        android:id="@+id/result_time_machine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Rp. 123,123,123"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/title_result"
+                        app:layout_constraintTop_toBottomOf="@+id/title_result" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="16dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Alokasi Aset"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="329dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/btn_disable"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                        <LinearLayout
+                            android:layout_width="157dp"
+                            android:layout_height="24dp"
+                            android:background="@color/purple_200" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/asset1"
+                        android:layout_width="15dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/purple_200"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                    <TextView
+                        android:id="@+id/first_alocate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Sukuk Bunga 47%"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/asset1"
+                        app:layout_constraintStart_toEndOf="@+id/asset1"
+                        app:layout_constraintTop_toTopOf="@+id/asset1" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="15dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/btn_disable"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/asset1" />
+
+                    <TextView
+                        android:id="@+id/second_alocate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textSize="14sp"
+                        android:text="Deposito 53%"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

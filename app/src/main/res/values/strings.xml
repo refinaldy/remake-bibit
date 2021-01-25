@@ -34,4 +34,5 @@
     <string name="desc_sub_title_rd">Resiko rendah dengan return yang lebih tinggi dari deposito</string>
     <string name="title_rd">Top Reksa Dana Pasar Uang</string>
     <string name="desc_list_rd">desc_list_rd</string>
+    <string name="btn_buy">Beli</string>
 </resources>
