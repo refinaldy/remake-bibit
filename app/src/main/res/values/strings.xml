@@ -21,6 +21,17 @@
     <string name="nav_transaction">Transaksi</string>
     <string name="nav_support">Support</string>
     <string name="nav_profile">Profil</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_investment_manajer">Sucorinvest Sharia Money Market Fund</string>
+    <string name="type_reksadana">Pasar Uang</string>
+    <string name="title_return">1 Year Return</string>
+    <string name="return_one_year">+6,94%</string>
+    <string name="title_expense_ratio">Expense Ratio</string>
+    <string name="expense_ratio">0.45%</string>
+    <string name="title_aum">Total AUM</string>
+    <string name="aum">680.78B</string>
+    <string name="title_top_reksa_dana">Top Reksa Dana</string>
+    <string name="desc_sub_title_rd">Resiko rendah dengan return yang lebih tinggi dari deposito</string>
+    <string name="title_rd">Top Reksa Dana Pasar Uang</string>
+    <string name="desc_list_rd">desc_list_rd</string>
 </resources>
