@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="363dp"
+        android:layout_height="156dp"
+        android:clickable="true"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/gray"
+        app:cardElevation="0dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/img_list_reksadana"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/title_list_reksadana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="275dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:text="@string/title_investment_manajer" />
+
+                    <TextView
+                        android:id="@+id/title_type_reksadana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type_reksadana"
+                        android:textSize="12dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/line"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/line" />
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_return"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_return"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/return_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/return_one_year"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="48dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_expense_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_expense_ratio"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/expense_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expense_ratio"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="48dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_aum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_aum"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/aum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aum"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>
