@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#888888</color>
     <color name="secondary_primary">#C5EBDC</color>
+    <color name="btn_disable">#99DDC4</color>
+    <color name="btn_active">#33916F</color>
 </resources>
