@@ -97,7 +97,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_rd"
+        android:id="@+id/recyclerView_reksadana"
         android:layout_marginTop="22dp"
         android:layout_below="@id/list_header_container"
         android:layout_width="match_parent"
