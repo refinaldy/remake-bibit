@@ -10,10 +10,10 @@ object ReksadanaData{
     )
 
     private val oneYearReturn = arrayOf(
-        "7.6%",
-        "8.7%",
-        "10.5%",
-        "14%"
+        7.65 ,
+        8.74,
+        10.53,
+        14.00
     )
 
     private val aum = arrayOf(
