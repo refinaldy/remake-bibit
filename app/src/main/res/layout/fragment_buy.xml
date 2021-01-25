@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sheet_fragment.BuyFragment"
+    android:orientation="vertical"
+    android:padding="12dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mau Investasi Berapa Hari Ini?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@color/gray"
+            />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dana Tabungan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_invest_nominal"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/primary"
+        android:hint="Minimal Pembelian Rp.100.000"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:inputType="number"
+        />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:padding="0dp"
+            android:id="@+id/btn_buy_500k"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:outlineAmbientShadowColor="@color/primary"
+            android:outlineSpotShadowColor="@color/primary"
+            app:strokeColor="@color/primary"
+            android:text="Rp. 500.000"
+            android:textAlignment="center"
+            android:textSize="8sp"/>
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:padding="0dp"
+            android:id="@+id/btn_buy_1000k"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:outlineAmbientShadowColor="@color/primary"
+            android:outlineSpotShadowColor="@color/primary"
+            app:strokeColor="@color/primary"
+            android:text="Rp. 1.000.000"
+            android:textAlignment="center"
+            android:textSize="8sp"/>
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:padding="0dp"
+            android:id="@+id/btn_buy_5000k"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:outlineAmbientShadowColor="@color/primary"
+            android:outlineSpotShadowColor="@color/primary"
+            app:strokeColor="@color/primary"
+            android:text="Rp. 5.000.000"
+            android:textAlignment="center"
+            android:textSize="8sp"/>
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:padding="0dp"
+            android:id="@+id/btn_buy_10000k"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:outlineAmbientShadowColor="@color/primary"
+            android:outlineSpotShadowColor="@color/primary"
+            app:strokeColor="@color/primary"
+            android:text="Rp. 10.000.000"
+            android:textAlignment="center"
+            android:textSize="8sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/btn_buy"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:strokeColor="@color/btn_active"
+        app:strokeWidth="2dp"
+        android:background="@color/btn_disable" />
+
+
+
+
+</LinearLayout>
