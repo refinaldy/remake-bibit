@@ -33,5 +33,7 @@ class HomeFragment : Fragment() {
             val toDetailActivity = Intent(activity, DetailReksadanaActivity::class.java)
             startActivity(toDetailActivity);
         }
+
+
     }
 }

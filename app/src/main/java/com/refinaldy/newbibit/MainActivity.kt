@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
             true
 
         }
+
+
     }
 
     private fun makeCurrentFragment(fragment: Fragment) =
