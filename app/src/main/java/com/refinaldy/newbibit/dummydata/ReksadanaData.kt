@@ -23,6 +23,13 @@ object ReksadanaData{
         "5B"
     )
 
+    private val expenseRatio = arrayOf(
+        "0.45%",
+        "0.50%",
+        "0.20%",
+        "0.7%"
+    )
+
     val listData: ArrayList<Reksadana>
         get() {
             val list:ArrayList<Reksadana> = arrayListOf<Reksadana>()
