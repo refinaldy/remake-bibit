@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import com.refinaldy.newbibit.DetailReksadanaActivity
 import com.refinaldy.newbibit.R
+import com.refinaldy.newbibit.listfragment.ListReksadanaFragment
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -29,11 +30,25 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val listReksadanaFragment = ListReksadanaFragment()
         ic_rdpu.setOnClickListener{
-            val toDetailActivity = Intent(activity, DetailReksadanaActivity::class.java)
-            startActivity(toDetailActivity);
+            makeCurrentFragment(listReksadanaFragment)
+        }
+
+        ic_rdpt.setOnClickListener{
+            makeCurrentFragment(listReksadanaFragment)
+        }
+
+        ic_rds.setOnClickListener{
+            makeCurrentFragment(listReksadanaFragment)
         }
 
 
     }
+
+    private fun makeCurrentFragment(fragment: Fragment) =
+            activity?.supportFragmentManager?.beginTransaction()?.apply {
+                replace(R.id.fl_wrapper, fragment)
+                commit()
+            }
 }
