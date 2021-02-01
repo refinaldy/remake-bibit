@@ -4,7 +4,7 @@
 Aplikasi bibit adalah aplikasi yang bertujuan untuk menghubungkan investor dengan manajer investasi, sehingga 
 investor pemula dapat bertransaksi dengan mudah, adapun instrumen investasi yang disediakan oleh aplikasi ini adalah reksa dana.
 
-Aplikasi ini dibuat dengan menggunakan platform [Android](https://www.android.com/intl/id_id/) dengan bahasa [Kotlin](https://developer.android.com/kotlin?hl=id) dan untuk layout juga dibantu dengan [Material Design](material.io) dari Google, data yang ada di dalam aplikasi
+Aplikasi ini dibuat dengan menggunakan platform [Android](https://www.android.com/intl/id_id/) dengan bahasa [Kotlin](https://developer.android.com/kotlin?hl=id) dan untuk layout juga dibantu dengan [Material Design](https://material.io/) dari Google, data yang ada di dalam aplikasi
 adalah data dummy, data tersebut digunakan untuk kepentingan uji coba front-end pada aplikasi ini dan bukan data sebenarnya.
 
 ### Pra-Produksi
