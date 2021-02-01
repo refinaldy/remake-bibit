@@ -23,6 +23,7 @@ class BuyFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         val aggreementFragment = AgreementFragment()
         btn_buy.isClickable = false
+
         val check = et_invest_nominal.text.toString()
 
         btn_buy_500k.setOnClickListener{

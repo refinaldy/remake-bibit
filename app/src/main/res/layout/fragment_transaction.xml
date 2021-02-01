@@ -5,10 +5,42 @@
     android:layout_height="match_parent"
     tools:context=".menu_fragment.TransactionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/btn_back_to_home"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/btn_left_arrow"
+                />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginEnd="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Detail" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="464dp"
+            android:src="@drawable/detailorder" />
+    </LinearLayout>
 
 </FrameLayout>

@@ -1,16 +1,26 @@
-package com.refinaldy.newbibit
+package com.refinaldy.newbibit.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.refinaldy.newbibit.R
 import com.refinaldy.newbibit.menu_fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+
+    var to: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if(intent.getStringExtra("to").isNullOrEmpty()){
+            to = ""
+        }else{
+            to = intent.getStringExtra("to")
+        }
 
         val homeFragment = HomeFragment()
         val portofolioFragment = PortofolioFragment()
@@ -18,7 +28,12 @@ class MainActivity : AppCompatActivity() {
         val supportFragment = SupportFragment()
         val profileFragment = ProfileFragment()
 
-        makeCurrentFragment(homeFragment)
+
+        if (to == "transaction"){
+            makeCurrentFragment(transactionFragment)
+        } else{
+            makeCurrentFragment(homeFragment)
+        }
 
         bottom_navigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
@@ -32,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             true
 
         }
+
 
 
     }

@@ -71,6 +71,7 @@
             app:strokeColor="@color/primary"
             android:text="Rp. 500.000"
             android:textAlignment="center"
+            android:background="@color/white"
             android:textSize="8sp"/>
 
         <Button
@@ -85,6 +86,7 @@
             app:strokeColor="@color/primary"
             android:text="Rp. 1.000.000"
             android:textAlignment="center"
+            android:background="@color/white"
             android:textSize="8sp"/>
 
         <Button
@@ -99,6 +101,7 @@
             app:strokeColor="@color/primary"
             android:text="Rp. 5.000.000"
             android:textAlignment="center"
+            android:background="@color/white"
             android:textSize="8sp"/>
 
         <Button
@@ -113,6 +116,7 @@
             app:strokeColor="@color/primary"
             android:text="Rp. 10.000.000"
             android:textAlignment="center"
+            android:background="@color/white"
             android:textSize="8sp"/>
 
     </LinearLayout>

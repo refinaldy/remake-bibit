@@ -2,17 +2,12 @@ package com.refinaldy.newbibit.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.refinaldy.newbibit.DetailReksadanaActivity
-import com.refinaldy.newbibit.R
-import com.refinaldy.newbibit.dummydata.Reksadana
-import com.refinaldy.newbibit.dummydata.ReksadanaData
-import kotlinx.android.synthetic.main.item_list_reksadana.view.*
+import com.refinaldy.newbibit.activity.DetailReksadanaActivity
+import com.refinaldy.newbibit.databinding.ItemListReksadanaBinding
 
-class ReksadanaAdapter(private val listReksadana: ArrayList<Reksadana>) : RecyclerView.Adapter<ReksadanaAdapter.ViewHolder>(){
+class ReksadanaAdapter() : RecyclerView.Adapter<ReksadanaAdapter.ViewHolder>(){
 
     private val investmentManager = arrayOf(
             "Sucorinvest Money Market Fund",
@@ -43,13 +38,15 @@ class ReksadanaAdapter(private val listReksadana: ArrayList<Reksadana>) : Recycl
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReksadanaAdapter.ViewHolder {
-        val v = LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_list_reksadana, parent, false)
-        return ViewHolder(v)
+        val inflater = LayoutInflater.from(parent.context)
+        val binding = ItemListReksadanaBinding.inflate(inflater)
+
+
+        return ViewHolder(binding)
     }
 
     override fun getItemCount(): Int {
-        return listReksadana.size
+        return investmentManager.size
     }
 
     override fun onBindViewHolder(holder: ReksadanaAdapter.ViewHolder, position: Int) {
@@ -59,35 +56,28 @@ class ReksadanaAdapter(private val listReksadana: ArrayList<Reksadana>) : Recycl
         holder.itemExpenseRatio.text =expenseRatio[position]
         holder.itemAum.text = aum[position]
 
-    }
-
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        var itemTitle: TextView
-        var itemReturn: TextView
-        var itemAum: TextView
-        var itemExpenseRatio: TextView
-
-        init{
-            itemTitle = itemView.findViewById(R.id.title_list_reksadana)
-            itemReturn = itemView.findViewById(R.id.return_year)
-            itemAum = itemView.findViewById(R.id.aum)
-            itemExpenseRatio = itemView.findViewById(R.id.expense_ratio)
-
-            itemView.setOnClickListener {
-                var position: Int = getAdapterPosition()
-                val context = itemView.context
-                val intent = Intent(context, DetailReksadanaActivity::class.java).apply {
-                    putExtra("NUMBER", position)
-                    putExtra("TITLE", itemTitle.text)
-                    putExtra("RETURN", itemReturn.text)
-                    putExtra("AUM", itemAum.text)
-                    putExtra("EXPENSERATIO", itemExpenseRatio.text)
-                }
-                context.startActivity(intent)
-            }
+        holder.reksadanaCard.setOnClickListener{
+            val context = holder.itemView.context
+            val intent = Intent(context, DetailReksadanaActivity::class.java)
+            context.startActivity(intent)
         }
 
+
     }
+
+    class ViewHolder(binding: ItemListReksadanaBinding) : RecyclerView.ViewHolder(binding.root){
+        val itemTitle = binding.titleListReksadana
+        val itemReturn = binding.returnYear
+        val itemExpenseRatio = binding.expenseRatio
+        val itemAum = binding.aum
+        val reksadanaCard = binding.reksadanaCard
+    }
+
+
+
+
+
+
 
 
 }

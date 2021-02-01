@@ -35,4 +35,6 @@
     <string name="title_rd">Top Reksa Dana Pasar Uang</string>
     <string name="desc_list_rd">desc_list_rd</string>
     <string name="btn_buy">Beli</string>
+    <string name="btn_pay">Bayar</string>
+    <string name="btn_confirm">Saya Sudah Bayar</string>
 </resources>

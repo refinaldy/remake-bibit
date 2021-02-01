@@ -1,13 +1,10 @@
 package com.refinaldy.newbibit.menu_fragment
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.SearchView
-import com.refinaldy.newbibit.DetailReksadanaActivity
 import com.refinaldy.newbibit.R
 import com.refinaldy.newbibit.listfragment.ListReksadanaFragment
 import kotlinx.android.synthetic.main.fragment_home.*

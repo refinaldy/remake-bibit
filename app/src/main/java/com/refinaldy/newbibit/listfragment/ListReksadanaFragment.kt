@@ -11,6 +11,7 @@ import com.refinaldy.newbibit.R
 import com.refinaldy.newbibit.adapter.ReksadanaAdapter
 import com.refinaldy.newbibit.dummydata.Reksadana
 import com.refinaldy.newbibit.dummydata.ReksadanaData
+import com.refinaldy.newbibit.menu_fragment.HomeFragment
 import kotlinx.android.synthetic.main.fragment_list_reksadana.*
 
 
@@ -35,11 +36,19 @@ class ListReksadanaFragment : Fragment() {
 
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
-        recyclerView_reksadana.apply {
 
+
+
+        recyclerView_reksadana.apply {
             layoutManager = LinearLayoutManager(activity)
             list.addAll(ReksadanaData.listData)
-            adapter = ReksadanaAdapter(list)
+            adapter = ReksadanaAdapter()
+
+
+        }
+
+        btn_back_to_home.setOnClickListener {
+            val homeFragment = HomeFragment()
         }
 
 
