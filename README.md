@@ -18,13 +18,13 @@ Package :
 
 [activity](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/activity), package ini berisikan activity yang ada, isinya hanya dua file activity karena pada aplikasi ini lebih cocok menggunakan fragment dikarenakan sedikit kompleks.
 
-[adapter](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/adapter), package ini berisikan adapter yang menghubungkan data dummy dengan recycler view pada list fragment
+[adapter](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/adapter), package ini berisikan adapter yang menghubungkan data dummy dengan recycler view pada list fragment.
 
-[dummyData](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/dummydata), package ini berisikan dummy data beserta view holder
+[dummyData](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/dummydata), package ini berisikan dummy data beserta view holder.
 
-[listFragment](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/listfragment), package ini berisikan fragment untuk list dummy data yang ada
+[listFragment](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/listfragment), package ini berisikan fragment untuk list dummy data yang ada.
 
-[menuFragment](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/menu_fragment), package ini berisikan fragment untuk mengisikan main activity (mengisi tiap menu yang ada pada bottom navigation bar)
+[menuFragment](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/menu_fragment), package ini berisikan fragment untuk mengisikan main activity (mengisi tiap menu yang ada pada bottom navigation bar).
 
 [sheetFragment](https://github.com/refinaldy7/remake-bibit/tree/master/app/src/main/java/com/refinaldy/newbibit/sheet_fragment), package ini untuk seluruh action sheet yang ada pada aplikasi.
 
